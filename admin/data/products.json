@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Sulphuric Acid",
+    "category": "Industrial Chemical",
+    "image": "assets/product1.jpg",
+    "description": "High quality industrial chemical."
+  },
+  {
+    "name": "Hydrochloric Acid",
+    "category": "Laboratory Chemical",
+    "image": "assets/product2.jpg",
+    "description": "Premium quality chemical solution."
+  }
+]

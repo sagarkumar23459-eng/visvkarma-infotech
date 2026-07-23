@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Product - Admin</title>
+
+<link rel="stylesheet" href="../css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<div class="admin-container">
+
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<h2>
+🧪 Sibani Chemicals
+</h2>
+
+
+<a href="../dashboard.html">
+Dashboard
+</a>
+
+
+<a href="products.html">
+Products
+</a>
+
+
+<a href="inquiries.html">
+Inquiries
+</a>
+
+
+<button id="logoutBtn">
+Logout
+</button>
+
+
+</aside>
+
+
+
+
+<!-- Main -->
+
+<section class="main">
+
+
+<div class="topbar">
+
+<h1>
+Add New Product
+</h1>
+
+
+</div>
+
+
+
+<div class="form-card">
+
+
+<form id="productForm">
+
+
+<input
+type="text"
+id="name"
+placeholder="Product Name"
+required
+>
+
+
+<input
+type="text"
+id="category"
+placeholder="Category"
+required
+>
+
+
+<input
+type="text"
+id="brand"
+placeholder="Brand"
+>
+
+
+<textarea
+id="description"
+placeholder="Product Description">
+</textarea>
+
+
+
+<input
+type="number"
+id="price"
+placeholder="Price"
+required
+>
+
+
+<input
+type="number"
+id="stock"
+placeholder="Stock"
+value="0"
+>
+
+
+
+<label>
+Product Image
+</label>
+
+
+<input
+type="file"
+id="image"
+accept="image/*"
+>
+
+
+
+<button type="submit">
+
+Add Product
+
+</button>
+
+
+
+<p id="message"></p>
+
+
+</form>
+
+
+</div>
+
+
+
+</section>
+
+
+</div>
+
+
+
+<script src="../js/admin.js"></script>
+
+<script src="../js/add-product.js"></script>
+
+
+</body>
+
+</html>
