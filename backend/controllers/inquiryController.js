@@ -1,4 +1,4 @@
-const Inquiry = require("../models/Inquiry");
+const Inquiry = require("../models/inquiry");
 
 // Create Inquiry
 exports.createInquiry = async (req, res) => {
