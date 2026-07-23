@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api";
+const API = "http://https://shibani-chemicals-backend.onrender.com/api";
 
 
 const id = new URLSearchParams(

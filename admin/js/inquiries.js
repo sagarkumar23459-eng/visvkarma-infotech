@@ -1,6 +1,6 @@
 "use strict";
 
-const API = "http://localhost:5000/api";
+const API = "https://shibani-chemicals-backend.onrender.com/api";
 
 async function loadInquiries() {
 
@@ -75,7 +75,7 @@ async function deleteInquiry(id){
 
         const response =
         await fetch(
-        `http://localhost:5000/api/inquiries/${id}`,
+        `http://shibani-chemicals-backend.onrender.com/api/inquiries/${id}`,
         {
             method:"DELETE"
         });
