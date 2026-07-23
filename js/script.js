@@ -412,7 +412,7 @@ if(inquiryForm){
         try{
 
             const response = await fetch(
-                "http://localhost:5000/api/inquiries",
+                "https://shibani-chemicals-backend.onrender.com/api/inquiries",
                 {
                     method:"POST",
 
@@ -457,8 +457,7 @@ if(inquiryForm){
    LOAD PRODUCTS
 ========================= */
 
-const API = "http://localhost:5000/api";
-
+const API = "https://shibani-chemicals-backend.onrender.com/api";
 async function loadProducts() {
 
     try {
@@ -487,7 +486,7 @@ async function loadProducts() {
         <img
         src="${
             product.image
-            ? "http://localhost:5000" + product.image
+            ? "https://shibani-chemicals-backend.onrender.com" + product.image
             : "assets/images/no-image.png"
         }"
         alt="${product.name}">
