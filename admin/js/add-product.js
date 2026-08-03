@@ -76,7 +76,7 @@ image
 
 const response =
 await fetch(
-"https://shibani-chemicals-backend.onrender.com/api/products",
+"https://visvkarma-infotech.onrender.com/api/products",
 {
 
 method:"POST",

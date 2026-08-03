@@ -1,4 +1,5 @@
-const API = "https://shibani-chemicals-backend.onrender.com/api";
+const API = "https://visvkarma-infotech.onrender.com/api";
+
 
 
 async function loadProducts() {
@@ -40,7 +41,7 @@ async function loadProducts() {
 ${
 product.image
 ?
-`<img src="http://shibani-chemicals-backend.onrender.com${product.image}" width="60">`
+`<img src="https://visvkarma-infotech.onrender.com${product.image}" width="60">`
 :
 "No Image"
 }
@@ -133,7 +134,7 @@ async function deleteProduct(id) {
     try {
 
         const response = await fetch(
-            `https://shibani-chemicals-backend.onrender.com/api/products/${id}`,
+            `https://visvkarma-infotech.onrender.com/api/products/${id}`,
             {
                 method: "DELETE",
                 headers: {

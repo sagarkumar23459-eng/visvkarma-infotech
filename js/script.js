@@ -9,7 +9,8 @@
 // CONFIG
 // ========================================
 
-const API = "https://shibani-chemicals-backend.onrender.com/api";
+const API = "https://visvkarma-infotech.onrender.com/api";
+
 
 
 // ========================================
@@ -308,7 +309,7 @@ productGrid.innerHTML+=`
 <img
 src="${
 product.image
-? "https://shibani-chemicals-backend.onrender.com"+product.image
+? "https://visvkarma-infotech.onrender.com"+product.image
 : "assets/images/no-image.png"
 }"
 alt="${product.name}">
@@ -338,7 +339,7 @@ class="view-btn"
 
 data-image="${
 product.image
-? "https://shibani-chemicals-backend.onrender.com"+product.image
+? "https://visvkarma-infotech.onrender.com"+product.image
 : "assets/images/no-image.png"
 }"
 

@@ -1,6 +1,6 @@
 "use strict";
 
-const API = "https://shibani-chemicals-backend.onrender.com/api";
+
 
 async function loadInquiries() {
 

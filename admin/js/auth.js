@@ -19,7 +19,7 @@ try{
 
 
 const res = await fetch(
-"https://shibani-chemicals-backend.onrender.com/api/auth/login",
+"https://visvkarma-infotech.onrender.com/api/auth/login",
 {
 method:"POST",
 
