@@ -21,6 +21,9 @@ const inquirySchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+    customerAddress:{ type: String, default: "" },
+    customerCity:{ type: String, default: "" },
+    quantity:{ type: Number, default: 0 },
 
     customerMessage: {
       type: String,

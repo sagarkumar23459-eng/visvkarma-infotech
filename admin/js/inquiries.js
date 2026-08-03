@@ -30,6 +30,12 @@ result.data.length;
 
                 <td>${inquiry.customerEmail || "-"}</td>
 
+                <td>${inquiry.quantity || "-"}</td>
+
+                <td>${inquiry.customerCity || "-"}</td>
+
+                <td>${inquiry.customerAddress || "-"}</td>
+
                 <td>${inquiry.customerMessage || "-"}</td>
 
                 <td>${new Date(inquiry.createdAt).toLocaleDateString()}</td>
