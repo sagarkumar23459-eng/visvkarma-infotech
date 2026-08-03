@@ -3,92 +3,507 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Sibani Chemicals Admin Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="./css/admin.css">
+    <title>Admin Login | Vishvkarma Info-Tech</title>
 
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="./css/admin.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+        <style>
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+            RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+
+    background:#050816;
+
+    color:#fff;
+
+}
+
+/*=========================================
+        LOGIN BODY
+=========================================*/
+
+.login-body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(37,99,235,.18),
+    transparent 35%),
+
+    radial-gradient(circle at bottom left,
+    rgba(124,58,237,.16),
+    transparent 35%),
+
+    linear-gradient(
+    180deg,
+    #050816,
+    #081321,
+    #050816);
+
+}
+
+/*=========================================
+        ANIMATED GRID
+=========================================*/
+
+.login-body::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+
+    background-size:40px 40px;
+
+    animation:gridMove 25s linear infinite;
+
+}
+
+@keyframes gridMove{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(40px);
+
+    }
+
+}
+
+/*=========================================
+        FLOATING GLOW
+=========================================*/
+
+.login-body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(37,99,235,.20);
+
+    filter:blur(120px);
+
+    animation:glowMove 8s ease-in-out infinite;
+
+}
+
+@keyframes glowMove{
+
+    0%,100%{
+
+        transform:translate(-150px,-120px);
+
+    }
+
+    50%{
+
+        transform:translate(180px,120px);
+
+    }
+
+}
+
+/*=========================================
+        WRAPPER
+=========================================*/
+
+.login-wrapper{
+
+    width:100%;
+
+    padding:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:5;
+
+}
+/*=========================================
+            LOGIN CARD
+=========================================*/
+
+.login-card{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:430px;
+
+    padding:3rem 2.5rem;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(28px);
+
+    -webkit-backdrop-filter:blur(28px);
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.45),
+
+    inset 0 1px 0 rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+    animation:cardFade .8s ease;
+
+}
+
+.login-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100px;
+
+    right:-100px;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:rgba(37,99,235,.18);
+
+    filter:blur(50px);
+
+}
+
+.login-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-120px;
+
+    left:-120px;
+
+    width:240px;
+
+    height:240px;
+
+    border-radius:50%;
+
+    background:rgba(124,58,237,.15);
+
+    filter:blur(60px);
+
+}
+
+@keyframes cardFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/*=========================================
+                LOGO
+=========================================*/
+
+.logo{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 1.8rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:24px;
+
+    font-size:2.5rem;
+
+    color:#fff;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6);
+
+    box-shadow:
+
+    0 15px 35px rgba(37,99,235,.45);
+
+    animation:floatLogo 4s ease-in-out infinite;
+
+}
+
+@keyframes floatLogo{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+/*=========================================
+            HEADING
+=========================================*/
+
+.login-card h1{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#fff;
+
+    margin-bottom:.4rem;
+
+}
+
+.login-card h1 span{
+
+    background:linear-gradient(
+    90deg,
+    #60a5fa,
+    #2563eb);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    margin-bottom:2rem;
+
+    font-size:.95rem;
+
+}
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+@media(max-width:768px){
+
+.login-card{
+
+padding:2.2rem 1.5rem;
+
+border-radius:22px;
+
+}
+
+.logo{
+
+width:75px;
+
+height:75px;
+
+font-size:2rem;
+
+}
+
+.login-card h1{
+
+font-size:1.6rem;
+
+}
+
+.subtitle{
+
+font-size:.9rem;
+
+}
+
+}
+
+        </style>
 </head>
-
 
 <body class="login-body">
 
-
 <div class="login-wrapper">
 
+    <div class="login-card">
 
-<div class="login-card">
+        <!-- Logo -->
 
+        <div class="logo">
 
-<div class="logo">
+            <i class="fa-solid fa-laptop-code"></i>
 
-🧪
+        </div>
+
+        <!-- Title -->
+
+        <h1>
+
+            Vishvkarma
+            <span>Info-Tech</span>
+
+        </h1>
+
+        <p class="subtitle">
+
+            Secure Admin Dashboard Login
+
+        </p>
+
+        <!-- Email -->
+
+        <div class="input-group">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Admin Email"
+                autocomplete="username">
+
+        </div>
+
+        <!-- Password -->
+
+        <div class="input-group">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                autocomplete="current-password">
+
+        </div>
+
+        <!-- Login -->
+
+        <button id="loginBtn">
+
+            <i class="fa-solid fa-right-to-bracket"></i>
+
+            Login Dashboard
+
+        </button>
+
+        <p id="message"></p>
+
+        <div class="footer-text">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            Secure Admin Access • Vishvkarma Info-Tech
+
+        </div>
+
+    </div>
 
 </div>
-
-
-<h1>
-Sibani Chemicals
-</h1>
-
-
-<p class="subtitle">
-Admin Panel Login
-</p>
-
-
-
-<div class="input-group">
-
-<input 
-type="email"
-id="email"
-placeholder="Admin Email"
->
-
-</div>
-
-
-
-<div class="input-group">
-
-<input 
-type="password"
-id="password"
-placeholder="Password"
->
-
-</div>
-
-
-
-<button id="loginBtn">
-
-Login Dashboard
-
-</button>
-
-
-
-<p id="message"></p>
-
-
-
-<div class="footer-text">
-
-Secure Admin Access 🔒
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
 
 <script src="./js/auth.js"></script>
 

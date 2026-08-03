@@ -2,155 +2,164 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sibani Chemicals Admin</title>
+<title>Vishvkarma Info-Tech | Admin Dashboard</title>
+
+<meta name="robots" content="noindex,nofollow">
 
 <link rel="stylesheet" href="./css/admin.css">
 
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
 
 <body>
 
-
 <div class="admin-container">
 
+    <!-- Sidebar -->
 
-<!-- Sidebar -->
+    <aside class="sidebar">
 
-<aside class="sidebar">
+        <div class="sidebar-logo">
 
-<h2>
-🧪 Sibani Chemicals
-</h2>
+            <i class="fa-solid fa-laptop-code"></i>
 
+            <h2>
 
-<nav>
+                Vishvkarma
 
-<a class="active" href="dashboard.html">
-Dashboard
-</a>
+                <span>Info-Tech</span>
 
+            </h2>
 
-<a href="./pages/products.html">
-Products
-</a>
+        </div>
 
+        <nav>
 
-<a href="./pages/inquiries.html">
-Inquiries
-</a>
+            <a class="active" href="dashboard.html">
 
+                <i class="fa-solid fa-chart-line"></i>
 
-<button id="logoutBtn">
-Logout
-</button>
+                Dashboard
 
+            </a>
 
-</nav>
+            <a href="./pages/products.html">
 
-</aside>
+                <i class="fa-solid fa-laptop"></i>
 
+                Products
 
+            </a>
 
+            <a href="./pages/inquiries.html">
 
-<!-- Main -->
+                <i class="fa-solid fa-envelope"></i>
 
+                Orders
 
-<section class="main">
+            </a>
 
+            
 
-<header class="topbar">
+           
 
-<h1>
-Admin Dashboard
-</h1>
+            <button id="logoutBtn">
 
+                <i class="fa-solid fa-right-from-bracket"></i>
 
-<div class="profile">
+                Logout
 
-Admin
+            </button>
+
+        </nav>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+
+                    Dashboard Overview
+
+                </h1>
+
+                <p>
+
+                    Welcome back, Admin 👋
+
+                </p>
+
+            </div>
+
+            <div class="profile">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+                Admin
+
+            </div>
+
+        </header>
+
+        <!-- Statistics -->
+
+        
+
+        <!-- Quick Actions -->
+
+        <section class="section">
+
+            <h2>
+
+                Quick Actions
+
+            </h2>
+
+            <div class="actions">
+
+                <a href="./pages/products.html">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add / Manage Products
+
+                </a>
+
+                <a href="./pages/inquiries.html">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    View Enquiries
+
+                </a>
+
+               
+
+            </div>
+
+        </section>
+
+    </main>
 
 </div>
-
-</header>
-
-
-
-
-<!-- Cards -->
-
-
-<div class="stats">
-
-
-<div class="stat-card">
-
-<h3>
-Total Products
-</h3>
-
-<p id="productCount">
-0
-</p>
-
-</div>
-
-
-
-<div class="stats">
-
-
-<div class="stat-card">
-<h3>📂 Categories</h3>
-<p id="categoryCount">0</p>
-</div>
-
-
-
-</div>
-
-<br><br>
-
-<!-- Quick Actions -->
-
-
-<div class="section">
-
-
-<h2>
-Quick Actions
-</h2>
-
-
-<div class="actions">
-
-
-<a href="./pages/products.html">
-➕ Manage Products
-</a>
-
-
-<a href="./pages/inquiries.html">
-📩 View Inquiries
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-</section>
-
-
-</div>
-
-
 
 <script src="./js/admin.js"></script>
 
