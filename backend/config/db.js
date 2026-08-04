@@ -12,6 +12,7 @@ const connectDB = async () => {
     const conn = await mongoose.connect(process.env.MONGO_URI, {
       serverSelectionTimeoutMS: 15000,
       family: 4,
+      dbName: "viskarma",
     });
 
     console.log(

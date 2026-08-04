@@ -81,7 +81,7 @@ async function deleteInquiry(id){
 
         const response =
         await fetch(
-        `http://shibani-chemicals-backend.onrender.com/api/inquiries/${id}`,
+        `https://visvkarma-infotech.onrender.com/api/inquiries/${id}`,
         {
             method:"DELETE"
         });
