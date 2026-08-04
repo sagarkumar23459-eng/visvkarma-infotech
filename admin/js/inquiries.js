@@ -1,6 +1,6 @@
 "use strict";
 
-
+const API = "https://visvkarma-infotech.onrender.com/api";
 
 async function loadInquiries() {
 
